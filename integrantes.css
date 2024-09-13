@@ -1,0 +1,326 @@
+@import url('');
+
+:root{
+    --color-primario:#ffff;
+    --color-secundario:#d15959;
+    --color-terciario:#f5edd6;
+    --color-cuarto:#0000;
+    --color-quinto:#a9ea65;
+    --color-sexto:#b7dde2;
+    --color-septimo:#025798;
+    --imagen-principal: url(imagenes/lugares/El\ volcán\ Osorno.jpg);
+    --fuente-calibri:'calibri', 'sans serif';
+    --fuente-calibri-negrita:'calibri', 'bold';
+    --fuente-open-sans-bold: 'Open Sans', 'bold';
+    --fuente-Sicret-Mono-PERSONAL:'Sicret Mono PERSONAL', 'bold';
+}
+
+*{
+    padding: 0%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+header{
+    box-sizing: content-box;
+    position: initial;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1% 0% 1% 1%;
+}
+
+body {
+    background-color: var(--color-primario);
+    height: auto;
+    font-family: var(--fuente-calibri);
+}
+
+.logo_Empremdimientos_circulares img{
+    width: 100%;
+    height:auto;
+}
+
+.menu{
+    flex-wrap: wrap;
+}
+
+.menu_contenido{
+    display: flex;
+    height: 30%;
+    width: auto;
+    color: var(--color-primario);
+    align-items:center;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column-reverse;
+    margin: 1rem 1rem 0rem 1rem;
+    position: relative;
+}
+
+.header__menú__link{
+    display: flex;
+    width: auto;
+    justify-content:center;
+}
+
+.btn {
+    background-color: var(--color-septimo);
+    position: relative;
+    width: 160%;
+    font-family: var(--fuente-calibri);
+    color: var(--color-primario);
+    border: none;
+    border-radius: 5px;
+    font-size: 75%;
+    padding: 6px;
+    margin: 2px 0px;
+    cursor: pointer;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-flow: column-reverse;
+    gap: 5px;
+  }
+
+.btn:hover {
+    font-weight:1000;
+    font-family: var(--fuente-open-sans-bold);
+    background-color: var(--color-septimo);
+    color: var(--color-quinto);
+    display: flex;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 20px;
+    display: flex;
+}
+
+nav a:hover{
+    color: none;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: none;
+}
+
+.resolucion{
+    width: 100%;
+}
+
+/**Movil**/
+
+@media (max-width: 767px){
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+    .movil {}
+
+    nav ul a{
+        font-size: 16px;
+    }
+}
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px){
+    .desktop {display: none;}
+    .tablet {}
+    .movil {display: none;}
+}
+
+/**Escritorio**/
+
+@media (min-width: 990px){
+    .desktop {}
+    .tablet {display: none;}
+    .movil {display: none;}
+    
+    .ul_menu{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+    }
+    nav .ul_menu{
+        margin: 10px 0;
+        line-height: 30px;
+    }
+    nav .ul_menu a{
+        font-size: 20px;
+    }
+
+    .btn:hover {
+        background-color: var(--color-septimo);
+        font-family: var(--fuente-calibri-negrita);
+    }
+}
+
+.presentación{
+    padding: 10% 10%;
+    display: flex;
+    align-items:center;
+}
+
+.card-list .card-item {
+    color: var(--color-primario);
+    width: 400px;
+    padding: 35px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.integrantes{
+    display: flex;
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+.contenido_integrantes{
+    display: flex;
+    width: 100%;
+}
+
+
+.card_list_integrantes .card-item .user-name{
+    display: flex;
+    color: var(--color-septimo);
+    justify-content: center;
+}
+
+.card-item-contenido{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.user-image{
+    position: relative;
+    height: 50%;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    border: 3px solid var(--color-septimo);
+    padding: 0;
+    margin: 1rem 2rem 1rem 2rem;
+    font-size: 100%;
+}
+
+.cards_integrantes{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.card_integrante{
+    background-color: var(--color-primario);
+    height: 485px;
+    width: 325px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 3px solid var(--color-septimo);
+    flex-direction: column;
+    display: flex;;
+    margin: 20px;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.user_contenido h1{
+    font-size: 150%;
+    margin-bottom: 8px;
+}
+
+.user_contenido p{
+    font-size: 100%;
+    line-height: 1.3;
+}
+
+.user_contenido{
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    margin: 0rem 2rem 1rem 2rem;
+    padding: 16px;
+}
+
+.user-info{
+    font-size: 100%;
+    font-family: var(--fuente-calibri);
+    justify-items: center;
+    flex-direction: column;
+    position: relative;
+    margin: 0rem 2rem 3rem 2rem;
+}
+
+.contenido_footer{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.presentación_enlaces{
+    display: flex;
+    justify-content: center;
+}
+
+.footer_text_contenido{
+    display: flex;
+    color: var(--color-terciario);
+    align-items:baseline;
+    position: initial;
+    gap: 20px;
+}
+
+.presentación__logo__corfo{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 25%;
+    height:10%;
+    flex-wrap: wrap-reverse;
+}
+
+.presentación__logo__pastel{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 25%;
+    height:10%;
+    flex-wrap: wrap-reverse;
+}
+
+.presentación__enlaces__iconos{
+    justify-content: center;
+    display: flex;
+    width: 20%;
+    height: 20%;
+    flex-wrap: wrap-reverse;
+}
+
+.derechos_de_autor_text .p_footer{
+    position: initial;
+    font-size: 34%;
+    color: var(--color-terciario);
+    font-family: var(--fuente-calibri);
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.footer{
+    background-color: var(--color-quinto);
+    padding: 12px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
