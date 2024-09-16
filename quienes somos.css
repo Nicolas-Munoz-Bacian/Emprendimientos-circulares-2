@@ -34,9 +34,10 @@ body {
     font-family: var(--fuente-calibri);
 }
 
-.logo_Empremdimientos_circulares img{
-    width: 100%;
+.logo_Empremdimientos_circulares{
+    width:150px;
     height:auto;
+    object-fit: contain;
 }
 
 .menu{
@@ -383,17 +384,6 @@ a{
     font-size: 80%;
 }
 
-.Párrafo_contenido{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    background: var(--color-primario);
-    color: black;
-    font-family: var(--fuente-calibri);
-    font-size: 120%;
-    padding: 5px;
-}
-
 .Párrafo_contenido_1{
     background: var(--color-primario);
     display: flex;
@@ -455,11 +445,12 @@ a{
     font-family: var(--fuente-calibri-negrita);
     align-items:center;
     justify-items: center;
-    justify-content:center;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 1rem 5rem 0rem 5rem;
+    width: 80%;
+    margin: 1rem 0rem 0rem 0rem;
 }
+
 
 /**FOOTER**/
 
@@ -478,33 +469,43 @@ a{
 .footer_text_contenido{
     display: flex;
     color: var(--color-terciario);
-    align-items:baseline;
     position: initial;
-    gap: 20px;
 }
 
 .presentación__logo__corfo{
     display: flex;
-    flex-direction: column-reverse;
-    width: 25%;
-    height:10%;
-    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    width: 30%;
+    flex-wrap: wrap;
+    object-fit: contain;
 }
 
 .presentación__logo__pastel{
     display: flex;
-    flex-direction: column-reverse;
-    width: 25%;
-    height:10%;
-    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    width: 32%;
+    flex-wrap: wrap;
+    object-fit: contain;
 }
 
-.presentación__enlaces__iconos{
-    justify-content: center;
+.Footer__iconos{
+    justify-content: space-between;
+    flex-wrap: wrap;
     display: flex;
-    width: 20%;
-    height: 20%;
-    flex-wrap: wrap-reverse;
+    gap: 10px;
+}
+
+.iconos__redes_img{
+    height: auto;
+    object-fit: contain;
+    width: 40px;
+    margin: 10px;
+}
+
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .derechos_de_autor_text .p_footer{
@@ -518,8 +519,8 @@ a{
 
 .footer{
     background-color: var(--color-quinto);
-    padding: 12px;
+    padding: 10px;
     height: auto;
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
 }

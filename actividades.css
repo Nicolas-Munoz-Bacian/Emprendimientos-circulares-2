@@ -34,9 +34,10 @@ body {
     font-family: var(--fuente-calibri);
 }
 
-.logo_Empremdimientos_circulares img{
-    width: 100%;
+.logo_Empremdimientos_circulares{
+    width:150px;
     height:auto;
+    object-fit: contain;
 }
 
 .menu{
@@ -373,15 +374,15 @@ input::placeholder, textarea::placeholder {
     text-align: center;
 }
 
-/**CUADROS VERTICALES**/
+/**ACTIVIDADES**/
 .Actividades{
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .Contenido_de_lado_Actividades{
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    display: flex;
     flex-wrap: wrap;
     font-family: var(--fuente-calibri);
 }
@@ -433,9 +434,9 @@ input::placeholder, textarea::placeholder {
     flex-wrap: wrap;
     position: absolute;
     display: none;
-    min-width: 300px;
-    max-width: 520px;
-    max-height: auto ;
+    min-width: 260px;
+    max-width: 530px;
+    max-height: auto;
     background-color: var(--color-primario);
     color: black;
     border-radius: 10px;
@@ -526,7 +527,7 @@ input::placeholder, textarea::placeholder {
     align-items: center;
     font-family: var(--fuente-calibri);
     margin: 1rem 1rem 1rem 1rem;
-    font-size: 100%;
+    font-size: 120%;
 }
 
 .btn_Ver{
@@ -550,36 +551,44 @@ input::placeholder, textarea::placeholder {
 
 /**Tabla**/
 .table{
-    position: relative;
-    width: 60%;
+    position: absolute;
+    flex-wrap: wrap-reverse;
+    width: 50%;
+    padding: 0;
+    min-width: 260px;
+    max-width: 530px;
+    min-height: 100px;
+    max-height: auto;
 }
 
 .table, th, td{
-    flex-wrap: wrap;
+    align-items: center;
+    flex-wrap: wrap-reverse;
     border-collapse: collapse;
     border: 2px solid var(--color-sexto);
     flex-direction: column;
-    font-size: 90%;
-    font-weight: 600;
-    width: auto;
-    height: 100%;
+    font-size: 80%;
+    min-width: 100px;
+    max-width: 530px;
+    min-height: 100px;
+    max-height: auto;
 }
 
 th:nth-child(even) {background-color: var(--color-sexto)}
 
 th, td{
-    padding: 3px;
+    padding: 2px;
 }
 
 td {
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     vertical-align: bottom;
   }
 
 th {
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     vertical-align: bottom;
-    text-align: left;
+    text-align: center;
 }
 
 /**FOOTER**/
@@ -599,33 +608,43 @@ th {
 .footer_text_contenido{
     display: flex;
     color: var(--color-terciario);
-    align-items:baseline;
     position: initial;
-    gap: 20px;
 }
 
 .presentación__logo__corfo{
     display: flex;
-    flex-direction: column-reverse;
-    width: 25%;
-    height:10%;
-    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    width: 30%;
+    flex-wrap: wrap;
+    object-fit: contain;
 }
 
 .presentación__logo__pastel{
     display: flex;
-    flex-direction: column-reverse;
-    width: 25%;
-    height:10%;
-    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    width: 32%;
+    flex-wrap: wrap;
+    object-fit: contain;
 }
 
-.presentación__enlaces__iconos{
-    justify-content: center;
+.Footer__iconos{
+    justify-content: space-between;
+    flex-wrap: wrap;
     display: flex;
-    width: 20%;
-    height: 20%;
-    flex-wrap: wrap-reverse;
+    gap: 10px;
+}
+
+.iconos__redes_img{
+    height: auto;
+    object-fit: contain;
+    width: 40px;
+    margin: 10px;
+}
+
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .derechos_de_autor_text .p_footer{
@@ -639,8 +658,8 @@ th {
 
 .footer{
     background-color: var(--color-quinto);
-    padding: 12px;
+    padding: 10px;
     height: auto;
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
 }
