@@ -28,7 +28,7 @@ header{
     position: initial;
     display: flex;
     background-color: var(--color-primario);
-    padding: 1% 0% 1% 1%;
+    padding: 1% 0% 1% 0%;
 }
 
 body {
@@ -59,13 +59,13 @@ body {
 .header__menú__link{
     display: flex;
     flex-wrap: wrap;
-    width: 110%;
+    width: 100%;
 }
 
 .btn {
     background-color: var(--color-septimo);
     position: relative;
-    width: 120%;
+    width: 100%;
     font-family: var(--fuente-calibri);
     color: var(--color-primario);
     border: none;
@@ -77,6 +77,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
+    object-fit: contain;
   }
 
 .btn:hover {
@@ -393,7 +394,7 @@ div.scroll-container {
 
 .cuerpo-card_1 {
     position: absolute;
-    width: auto;
+    width: 81%;
     bottom: 0;
     padding: 10px;
     background: linear-gradient(
@@ -401,7 +402,7 @@ div.scroll-container {
         #0000 0%,
         #074170 80%
     );
-    color: #ffff;
+    color: var(--color-primario);
 }
 
 .cuerpo-card_1 h5,
@@ -413,7 +414,6 @@ div.scroll-container {
 
 .card_1 img {
     flex-wrap: wrap;
-    height: 50%;
     position: relative;
     min-width: 300px; 
     max-width:422px;
