@@ -1,4 +1,4 @@
-@import url('');
+@import url('http://127.0.0.1:5502/integrantes.css');
 
 :root{
     --color-primario:#ffff;
@@ -21,74 +21,71 @@
     box-sizing: border-box;
 }
 
+/**ENCABEZADO Y MENÚ**/
+
 header{
     box-sizing: content-box;
     position: initial;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    background-color: var(--color-primario);
     padding: 1% 0% 1% 1%;
 }
 
 body {
-    background-color: var(--color-primario);
-    height: auto;
+    height: 100%;
     font-family: var(--fuente-calibri);
 }
 
 .logo_Empremdimientos_circulares{
-    width:150px;
+    width:180px;
     height:auto;
     object-fit: contain;
 }
 
 .menu{
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .menu_contenido{
     display: flex;
+    width: 100%;
     height: 30%;
-    width: auto;
-    color: var(--color-primario);
-    align-items:center;
-    display: flex;
-    justify-content:space-between;
-    flex-direction: column-reverse;
-    margin: 1rem 1rem 0rem 1rem;
+    flex-wrap: wrap;
+    margin: 1rem 0rem 0rem 0rem;
     position: relative;
 }
 
 .header__menú__link{
     display: flex;
-    width: auto;
-    justify-content:center;
+    flex-wrap: wrap;
+    width: 110%;
 }
 
 .btn {
     background-color: var(--color-septimo);
     position: relative;
-    width: 160%;
+    width: 120%;
     font-family: var(--fuente-calibri);
     color: var(--color-primario);
     border: none;
     border-radius: 5px;
-    font-size: 75%;
+    font-size: 90%;
     padding: 6px;
     margin: 2px 0px;
     cursor: pointer;
     justify-content: center;
     flex-wrap: wrap;
-    flex-flow: column-reverse;
-    gap: 5px;
+    flex-direction: column;
   }
 
 .btn:hover {
-    font-weight:1000;
-    font-family: var(--fuente-open-sans-bold);
+    font-family: var(--fuente-calibri-negrita);
     background-color: var(--color-septimo);
     color: var(--color-quinto);
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 nav a{
@@ -106,6 +103,8 @@ a{
     text-decoration: none;
     color: none;
 }
+
+/**BREAKPOINTS**/
 
 .resolucion{
     width: 100%;
@@ -265,6 +264,27 @@ a{
     margin: 0rem 2rem 3rem 2rem;
 }
 
+/** BOTÓN VOLVER ARRIVA (CABECERA) **/
+
+.btn_volver_arriba{
+    position: relative;
+    padding: 10px;
+    font-size: 100%;
+    font-family: var(--fuente-calibri);
+    border: 2px solid var(--color-septimo);
+    background: var(--color-primario);
+    color: var(--color-septimo);
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+    float: right;
+}
+
+.Contenido_central_volver_arriba{
+    justify-content: center;
+    display: flex;
+    clear: both;
+}
 
 /**FOOTER**/
 
@@ -282,14 +302,17 @@ a{
 
 .footer_text_contenido{
     display: flex;
-    color: var(--color-terciario);
+    color: var(--color-primario);
     position: initial;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.presentación__logo__corfo{
+.presentación__footer__logo{
     display: flex;
     flex-direction: column;
     width: 30%;
+    height: auto;
     flex-wrap: wrap;
     object-fit: contain;
 }
@@ -325,10 +348,11 @@ a{
 .derechos_de_autor_text .p_footer{
     position: initial;
     font-size: 34%;
-    color: var(--color-terciario);
+    color: var(--color-primario);
     font-family: var(--fuente-calibri);
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .footer{
