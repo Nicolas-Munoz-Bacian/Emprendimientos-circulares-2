@@ -515,7 +515,7 @@ input::placeholder, textarea::placeholder {
 .menu_contenido_th-grid {
     size: 100%;;
     justify-content: center;
-    margin: 0rem 2rem 0rem 2rem;
+    margin: 0rem 0rem 0rem 1.5rem;
     display: flex;
     flex-wrap: wrap;
 }

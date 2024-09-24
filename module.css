@@ -403,7 +403,7 @@ div.scroll-container {
         #0000 0%,
         #074170 80%
     );
-    color: #ffff;
+    color: var(--color-primario);
 }
 
 .cuerpo-card_1 h5,
@@ -661,13 +661,14 @@ div.scroll-container {
 .encabezado{
     display: flex;
     justify-content:center;
+    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     font-family: var(--fuente-calibri-negrita);
     color: var(--color-septimo);
-    font-size: 250%;
+    font-size: 200%;
     padding-bottom: 2%;
-    padding-left: 16%;
+    padding-left: none;
 }
 
 .contenedor_videos .main-video .tittle{

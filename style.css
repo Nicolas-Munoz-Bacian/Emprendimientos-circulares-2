@@ -343,7 +343,7 @@ div.scroll-container {
         transform: translateX(0);
     }
     100%{
-        transform: translateX( calc(-250px * 8));
+        transform: translateX( calc(-200px * 8));
     }
 }
 

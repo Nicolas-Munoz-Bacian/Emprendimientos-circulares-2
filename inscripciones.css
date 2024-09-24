@@ -316,7 +316,7 @@ a{
     resize: none;
   }
 
-  .contenido-contacto .campo, textarea{
+.contenido-contacto .campo, textarea{
     flex-wrap: wrap;
     width: 90%;
     padding: 10px 10px;
@@ -386,7 +386,6 @@ h1{
     cursor: pointer;
     transition: none;
     margin-top: 18%;
-    margin-left: 10%;
 }
 
 .btn_inscribete:hover{
